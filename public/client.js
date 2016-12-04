@@ -2,8 +2,12 @@
 // _  _
 //  ||
 
-function checkWin(){
-  if(//Horizontal Wins
+var ttt = {
+  player1: {},
+  player2: {},
+  
+  checkWin: function(){
+    if(//Horizontal Wins
      player1.hasOwnProperty(0) && player1.hasOwnProperty(1) && player1.hasOwnProperty(2) ||
      player1.hasOwnProperty(3) && player1.hasOwnProperty(4) && player1.hasOwnProperty(5) ||
      player1.hasOwnProperty(6) && player1.hasOwnProperty(7) && player1.hasOwnProperty(8) ||
@@ -18,7 +22,7 @@ function checkWin(){
     
     {
     console.log("Player 1 wins!");
-    console.log("Play again!")
+    console.log("Play again!");
     
     }
     else if(//Horizontal Wins
@@ -35,14 +39,12 @@ function checkWin(){
     )
     {
       console.log("Player 2 wins!");
-      console.log("Play again!")
+      console.log("Play again!");
     }
-}
-
-var player1 = {};
-var player2 = {};
-
-function move(player, square){
-  player[square] = true;
-  checkWin();
-}
+  },
+  
+  move: function(player,square){
+    player[square] = true;
+    checkWin();
+  }
+};
