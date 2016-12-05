@@ -1,17 +1,35 @@
 <html>
   <head>
     <title>Welcome to HyperDev!</title>
-    <meta name="description" content="A cool thing made with HyperDev">
     <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
+    <h1>Tic Tac Toe</h1>
+    <div>
+      <a id="0" onclick="ttt.fillSquare()">_</a>
+      <a id="1" onclick="ttt.fillSquare()">_</a>
+      <a id="2" onclick="ttt.fillSquare()">_</a>
+    </div>
+    
+    <div>
+      <a id="3" onclick="ttt.fillSquare()">_</a>
+      <a id="4" onclick="ttt.fillSquare()">_</a>
+      <a id="5" onclick="ttt.fillSquare()">_</a>
+    </div>
+    
+    <div>
+      <a id="6" onclick="ttt.fillSquare()">_</a>
+      <a id="7" onclick="ttt.fillSquare()">_</a>
+      <a id="8" onclick="ttt.fillSquare()">_</a>
+    </div>
+    <div>
+      <br/>
+      <button onclick="ttt.reset()">reset</button>
+    </div>
+    
 
 
     <script src="/client.js"></script>
-
   </body>
 </html>
