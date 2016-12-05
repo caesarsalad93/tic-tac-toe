@@ -35,7 +35,8 @@ var ttt = {
     console.log("Play again!");
     this.player1 = {};
     this.player2 = {};
-    alert('Player 1 wins!');
+    setTimeout(function(){alert('Player 1 wins!')}, 100);
+    
     }
     else if(//Horizontal Wins
      this.player2.hasOwnProperty(0) && this.player2.hasOwnProperty(1) && this.player2.hasOwnProperty(2) ||
@@ -54,7 +55,8 @@ var ttt = {
       console.log("Play again!");
       this.player1 = {};
       this.player2 = {};
-      alert('Player 2 wins!');
+      setTimeout(function(){alert('Player 2 wins!')}, 100);
+      
     }
   },
   
@@ -74,8 +76,19 @@ var ttt = {
       sqTarget.innerHTML = ttt.currentTurn;
       this.move(this.currentTurn, sqNum);
       this.changeTurn();
-      console.log(parseInt(event.target.id));
+      
+      this.computer();
     }
+  },
+  
+  computer: function(){
+    var randomSquare = Math.floor(Math.random()*9);
+    if(this.currentTurn !== this.symbol1){
+          document.getElementById(randomSquare).click();
+          if(this.currentTurn !== this.symbol1){
+            this.computer();
+          }
+      }
   },
   
   reset: function() {
