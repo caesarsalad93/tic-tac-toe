@@ -1,0 +1,22 @@
+#board{
+  display: flex;
+  width: 450px;
+  height: 450px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.square{
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+  align-items: center;
+}
+.square:hover{
+  cursor: pointer;
+  background-color: rgb(204, 0, 255);
+}

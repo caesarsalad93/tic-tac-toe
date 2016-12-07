@@ -2,31 +2,35 @@
   <head>
     <title>Welcome to HyperDev!</title>
     <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
   </head>
   <body>
     <h1>Tic Tac Toe</h1>
+    <h2></h2>
     <div>
-      <a id="0" onclick="ttt.fillSquare()">_</a>
-      <a id="1" onclick="ttt.fillSquare()">_</a>
-      <a id="2" onclick="ttt.fillSquare()">_</a>
+    <button id="toggleAI">ToggleAI</button>
+    <button id="reset">reset</button>
     </div>
-    
-    <div>
-      <a id="3" onclick="ttt.fillSquare()">_</a>
-      <a id="4" onclick="ttt.fillSquare()">_</a>
-      <a id="5" onclick="ttt.fillSquare()">_</a>
+    <div id="pickShape">Pick your shape
+      <button id="O">O</button>
+      <button id="X">X</button>
     </div>
-    
-    <div>
-      <a id="6" onclick="ttt.fillSquare()">_</a>
-      <a id="7" onclick="ttt.fillSquare()">_</a>
-      <a id="8" onclick="ttt.fillSquare()">_</a>
+    <div id="board">
+
+      <div id="0" class="square">_</div>
+      <div id="1" class="square">_</div>
+      <div id="2" class="square">_</div>
+
+      <div id="3" class="square">_</div>
+      <div id="4" class="square">_</div>
+      <div id="5" class="square">_</div>
+
+      <div id="6" class="square">_</div>
+      <div id="7" class="square">_</div>
+      <div id="8" class="square">_</div>
     </div>
-    <div>
-      <br/>
-      <button onclick="ttt.reset()">reset</button>
-    </div>
+
+
     
 
 
